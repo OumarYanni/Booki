@@ -402,7 +402,7 @@ footer figure, li {
 
 
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 992px (tablette) */
-@media all and (min-width: 768px) and (max-width: 992px)
+@media all and (min-width: 768px) and (max-width: 991px)
 {
     .titre_h1{
         font-family: 'raleway', arial;
@@ -815,7 +815,7 @@ footer figure, li {
 
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 768px (mobile) */
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     /* Annuler l'effet de flexbox pour appliquer l'effet flex des éléments enfants */
     header {
