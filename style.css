@@ -1,0 +1,1221 @@
+/*Définition d'une nouvelle police nommée raleway. Toujours mettre les fonts en haut*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.box {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+ }
+
+.titre_h1{
+    font-family: 'raleway', arial;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: black;
+}
+
+/* Laisser de l'espage sur la gauche-droite conformément à la maquette. Déterminer une largeur max de 1400 px conformément aux spécifications techniques */
+.conteneur {
+   margin-left: 40px;
+   margin-right: 40px;
+   max-width: 1400px;
+   margin: 0 auto;
+ }
+body {
+    font-family: 'raleway', serif;
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: 1400px;
+}
+/* header */
+
+/* Utilisation de la police qu'on vient de définir sur les titres et la phrase d'après */
+h1 {
+    font-family: 'raleway', Arial;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+h2 {
+    font-family: 'raleway', Arial;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+h3 {
+    font-family: 'raleway', Arial;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin : 0;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+/*.carte-h3 {
+    font-family: 'raleway', Arial;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 10px;
+}*/
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    /*margin: 5px 5px 5px 10px;*/
+}
+
+.carte_populaire_marseille a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    display: flex;   
+    width: 100%;
+    position: relative;
+}
+
+figure, ul{
+    margin: 0;
+    padding: 0;
+} 
+/* Application de flexbox au menu de navigation et espacement du logo et des éléments du menu. Space-between pour placer les box de part et d'autre. Align items center pour centrer les éléments du menu */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Réduire la taille du logo. */
+header img {
+    width: 61.09px;
+    height: 19px;
+}
+/* Application de flexbox au menu de navigation pour les mettre côte à côte. Supprimer les deux listes à puces */
+header nav ul {
+    display: flex;
+    list-style: none;    
+}
+/* Espacer les deux éléments du menu */
+header nav li {
+    margin: 0 30px 0 30px;
+    border-top: 2px solid transparent;
+    padding: 30px 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+/* Apparence par défaut des liens */
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+ }
+/* Apparence au survol des liens */
+header nav li:hover {
+    border-top: 2px solid #0065FC;    
+}
+header nav li:hover a{
+    color: #0065FC; 
+}
+
+form {
+    margin-top: 20px;
+}
+form figure {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 49px;   
+    background: #f2f2f2; 
+    border: 1px solid #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+}
+   
+form .fa-solid, .fas {
+    height: fit-content;
+    color: black;
+}
+
+[type="search"] {
+background: #FFFFFF;
+border: 1px solid #F2F2F2;
+height: 51.2px;
+position: relative;
+right: 5px;
+border-left: none;
+border-right: none;
+font-weight: bold;
+}
+
+form span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 132px;
+    height: 49px;   
+    background: #0065FC; 
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    position: relative;
+    right: 10px;
+}
+
+form span b, strong {
+font-family: 'Raleway', serif, sans serif;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+color: #FFFFFF;
+}
+
+#intitule_filtre {
+    border: none;
+    padding : 7px 0px 7px 0px;
+}
+#blocun_des_filtres, #blocdeux_des_filtres {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+.conteneur_filtres .fa-solid, .fas {
+    color: #0065FC;
+    padding-right: 7px;
+    width: 13px;
+}
+.conteneur_filtres {
+    font-weight: bold;
+    display: inline-flex;
+    margin-top: 30px;
+}
+.conteneur_filtres div {
+
+    border-radius: 25px;
+    padding: 7px 25px 7px 25px;
+    border: 2px #d9d9d9 solid;
+    margin: 0px 25px 0px 0px;
+}
+
+#blocun_des_filtres div:hover, #blocdeux_des_filtres div:hover {
+    background-color: #DEEBFF;    
+}
+#intitule_filtre:hover {
+background: none;
+}
+
+.info_complementaire {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 39px 0px;
+}
+.info_complementaire b, strong {
+    color:#0065FC    
+}
+.info_complementaire div {
+    border-radius: 25px;
+    border: 1px #d9d9d9 solid;
+    padding: 1px 8px 8px 8px;
+    width: 4px;
+    height: 10px;
+    margin-right: 7px;
+}
+ 
+#loupe {
+    display: none;
+}
+.conteneur_hebergements_populaires {
+    display: flex; 
+    justify-content: space-between;
+}
+.hebergements {
+    background-color: #f2f2f2;
+    width: 57%;
+    border-radius: 20px;
+    padding: 25px;
+}
+.conteneur_carte_hebergement_marseille {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.carte_hebergement_marseille {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px; /* 5px rounded corners */
+    background-color: white;
+    padding: 3px;
+    width: 30%;
+    height: 199px;
+    margin: 10px 0px;
+  }
+  /*Pour appliquer une margin afin d'augmenter l'espace conformément à la maquette*/
+  .carte_hebergement_marseille:nth-child(4), .carte_hebergement_marseille:nth-child(5), .carte_hebergement_marseille:nth-child(6) {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px; /* 5px rounded corners */
+    background-color: white;
+    padding: 3px;
+    width: 30%;
+    height: 199px;
+    margin: 30px 5px 60px 5px;
+  }
+.conteneur_carte_populaire_marseille {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.carte_populaire_marseille {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px; /* 5px rounded corners */
+    background-color: white;
+    padding: 4px;
+    width: 104%; 
+    height: 144px;
+    margin: 0 0 33px 0;
+    display: flex;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+    color: #0065FC;
+  }
+/* Add rounded corners to the top left and the top right corner of the image */
+.hebergements img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+  }
+
+.tarifs_marseille {
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    margin: 5px 5px 5px 10px;
+  }
+.carte_populaire_marseille > div {
+    position: relative;
+  }
+.conteneur_icones_notations {
+    color: #0065FC;
+    font-size: 12px;
+    display: inline-flex;
+    margin-left: 6px; 
+  }
+.conteneur_icones_notations_plus_populaires {
+    color: #0065FC;
+    font-size: 12px;
+    display: inline-flex;
+    margin-left: 6px; 
+    position: absolute;
+    bottom: 5%;
+  }
+
+.afficher_plus {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px 10px;
+}
+
+.plus_populaire {
+    background-color: #f2f2f2;
+    width: 28%;
+    border-radius: 20px;
+    padding: 25px 30px;
+}
+
+.plus_populaire img {
+    border-radius: 20px 0 0 20px;
+    height: 144px;
+    width: 40%;
+    object-fit: cover;
+  }
+
+.carte_populaire_marseille div {
+    width: 60%;
+}
+
+#graphique_tendance {
+float: right;   
+}
+
+.derniere_etoile {
+    font-weight: 900;
+    color: #d9d9d9;  
+}
+.h3_activites_marseille {
+    padding-top: 15px;
+    padding-left: 17px;
+}
+.activites {
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.activites h2 {
+    font-family: 'raleway', Arial;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0px;
+    padding: 15px 0px;   
+}
+
+.conteneur_carte_activites_marseille {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carte_activites_marseille {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px; /* 5px rounded corners */
+    background-color: white;
+    width: 23%; 
+    height: 444px;
+}
+
+.activites img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 389px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #f2f2f2;
+    width: 100%;  
+    display: flex;
+    justify-content: space-around; 
+    line-height: 30px;
+    padding: 30px 0px 30px 0px;
+}
+
+footer h3 {
+    padding-left: 0px;
+    padding-bottom: 15px;
+}
+figure, ul {
+    list-style: none;
+}
+footer figure, li {
+    font-size: 12px;  
+}
+
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 992px (tablette) */
+@media all and (min-width: 768px) and (max-width: 991px)
+{
+    .titre_h1{
+        font-family: 'raleway', arial;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: black;
+    }
+    
+    /* Laisser de l'espage sur la gauche-droite conformément à la maquette. Déterminer une largeur max de 1400 px conformément aux spécifications techniques */
+    .conteneur {
+       margin-left: 40px;
+       margin-right: 40px;
+       max-width: 1400px;
+     }
+    body {
+        font-family: 'raleway', serif;
+        margin-left: 40px;
+        margin-right: 40px;
+        max-width: 1400px;
+    }
+    /* header */
+    
+    /* Utilisation de la police qu'on vient de définir sur les titres et la phrase d'après */
+    h1 {
+        font-family: 'raleway', Arial;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    h2 {
+        font-family: 'raleway', Arial;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-family: 'raleway', Arial;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 16px;
+        margin : 0;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    
+    figure, ul{
+        margin: 0;
+        padding: 0;
+    } 
+    
+    /* Application de flexbox au menu de navigation et espacement du logo et des éléments du menu. Space-between pour placer les box de part et d'autre. Align items center pour centrer les éléments du menu */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Réduire la taille du logo. */
+    header img {
+        width: 61.09px;
+        height: 19px;
+    }
+    /* Application de flexbox au menu de navigation pour les mettre côte à côte. Supprimer les deux listes à puces */
+    header nav ul {
+        display: flex;
+        list-style: none;    
+    }
+    /* Espacer les deux éléments du menu */
+    header nav li {
+        margin: 0 30px 0 30px;
+        /*border-top: 2px solid transparent;*/
+        padding: 30px 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    /* Apparence par défaut des liens */
+    header a {
+        text-decoration: none;
+        color: black;
+     }
+    /* Apparence au survol des liens */
+    header nav li:hover {
+        border-top: 2px solid #0065FC;    
+    }
+    header nav li:hover a{
+        color: #0065FC; 
+    }
+
+    /*  */
+    form {
+        margin-top: 20px;
+    }
+    form figure {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 49px;   
+        background: #f2f2f2; 
+        border: 1px solid #f2f2f2;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    form .fa-solid, .fas {
+        height: fit-content;
+        color: black;
+    }
+
+    [type="search"] {
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    height: 51.2px;
+    position: relative;
+    right: 5px;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    }
+
+    form span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 132px;
+        height: 49px;   
+        background: #0065FC; 
+        border: 1px solid #0065FC;
+        border-radius: 0px 15px 15px 0px;
+        position: relative;
+        right: 10px;
+    }
+
+    form span b, strong {
+    font-family: 'Raleway', serif, sans serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    }
+
+    #intitule_filtre {
+        border: none;
+        padding : 7px 0px 7px 0px;
+    }
+    #blocun_des_filtres, #blocdeux_des_filtres {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+    }
+    .conteneur_filtres .fa-solid, .fas {
+        color: #0065FC;
+        padding-right: 7px;
+        width: 13px;
+    }
+    .conteneur_filtres {
+        font-weight: bold;
+        display: inline-flex;
+        margin-top: 30px;
+    
+    }
+    .conteneur_filtres div {
+        border-radius: 25px;
+        padding: 7px 13px 7px 13px;
+        border: 2px #d9d9d9 solid;
+        margin: 0px 15px 0px 0px;
+        font-size: 14px;
+    }
+
+    #blocun_des_filtres div:hover, #blocdeux_des_filtres div:hover {
+        background-color: #DEEBFF;    
+    }
+    #intitule_filtre:hover {
+    background: none;
+    }
+
+    .info_complementaire {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 39px 0px;
+    }
+    .info_complementaire b, strong {
+        color:#0065FC    
+    }
+    .info_complementaire div {
+        border-radius: 25px;
+        border: 1px #d9d9d9 solid;
+        padding: 1px 8px 8px 8px;
+        width: 4px;
+        height: 10px;
+        margin-right: 7px;
+    }
+
+    #loupe {
+        display: none;
+    }
+    .conteneur_hebergements_populaires {
+        display: flex;
+        flex-direction: column;
+    }
+    .hebergements {
+        background-color: #f2f2f2;
+        width: 93%;
+        border-radius: 20px;
+        padding: 25px;
+    }
+    .conteneur_carte_hebergement_marseille {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .carte_hebergement_marseille {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 20px; /* 5px rounded corners */
+        background-color: white;
+        padding: 3px;
+        width: 30%;
+        height: 199px;
+        margin: 10px 0px;
+      }
+      /*Pour appliquer une margin afin d'augmenter l'espace conformément à la maquette*/
+      .carte_hebergement_marseille:nth-child(4), .carte_hebergement_marseille:nth-child(5), .carte_hebergement_marseille:nth-child(6) {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 20px; /* 5px rounded corners */
+        background-color: white;
+        padding: 3px;
+        width: 30%;
+        height: 199px;
+        margin: 30px 5px 35px 5px;
+      }
+    .conteneur_carte_populaire_marseille {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: row;
+    }
+    .carte_populaire_marseille {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 20px; /* 5px rounded corners */
+        background-color: white;
+        padding: 4px;
+        width: 90%; 
+        height: 144px;
+        margin: 0 15px 33px 0;
+        display: flex;
+    }
+    /*Supprimer le margin-right de la dernière card plus populaire*/
+    .carte_populaire_marseille:nth-child(3) {
+        margin: 0 0px 33px 0;
+    }
+    .carte_populaire_marseille p {
+        font-size: 10px;
+    }
+    .fa-solid, .fas {
+        font-weight: 900;
+        width: 12px;
+        height: 12px;
+        padding: 2px;
+        color: #0065FC;
+      }
+      
+      /* Add rounded corners to the top left and the top right corner of the image */
+    .hebergements img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 124px;
+        object-fit: cover;
+      }
+    
+    .tarifs_marseille {
+        font-weight: 400;
+        font-size: 12px;
+        font-style: normal;
+        margin: 5px 5px 5px 10px;
+      }
+    .conteneur_icones_notations {
+        color: #0065FC;
+        font-size: 12px;
+        display: inline-flex;
+        margin-left: 6px;
+      }
+      .conteneur_icones_notations_plus_populaires {
+        color: #0065FC;
+        font-size: 12px;
+        display: inline-flex;
+        margin-left: 6px; 
+        position: absolute;
+        bottom: 5%;
+      }
+    .afficher_plus {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0px 10px;
+    }
+
+    .plus_populaire {
+        background-color: #f2f2f2;
+        width: 93%;
+        border-radius: 20px;
+        padding: 25px;
+        margin-top: 40px;
+    }
+    
+    .plus_populaire img {
+        border-radius: 20px 0 0 20px;
+        height: 144px;
+        object-fit: cover;
+      }
+    
+    #graphique_tendance {
+    float: right;
+    margin-right: 5px;   
+    }
+    
+    .derniere_etoile {
+        font-weight: 900;
+        color: #d9d9d9;  
+    }
+    .h3_activites_marseille {
+        padding-top: 15px;
+        padding-left: 17px;
+    }
+    .h3_activites_marseille_notre_dame {
+        padding-top: 15px;
+        padding-left: 17px;
+        padding-right: 42px;
+    }
+    .activites {
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .activites h2 {
+        font-family: 'raleway', Arial;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0px;
+        padding: 30px 0px;   
+    }
+    
+    .conteneur_carte_activites_marseille {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .carte_activites_marseille {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 20px; /* 5px rounded corners */
+        background-color: white;
+        width: 23%; 
+        height: 267px;
+    }
+    
+    .activites img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 211px;
+        object-fit: cover;
+    }
+    
+    footer {
+        background-color: #f2f2f2;
+        width: 100%;  
+        display: flex;
+        justify-content: space-around; 
+        line-height: 30px;
+        padding: 30px 0px 30px 0px;
+    }
+    
+    footer h3 {
+        padding-left: 0px;
+        padding-bottom: 15px;
+    }
+    figure, ul {
+        list-style: none;
+    }
+    footer figure, li {
+        font-size: 12px;  
+    }    
+}  
+
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 768px (mobile) */
+@media screen and (max-width: 767px)
+{
+    /* Annuler l'effet de flexbox pour appliquer l'effet flex des éléments enfants */
+    header {
+        display: contents;
+    }
+    header figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+    .titre_h1{
+        font-family: 'raleway', arial;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: black;
+    }
+    
+    /* Laisser de l'espage sur la gauche-droite conformément à la maquette. Déterminer une largeur max de 1400 px conformément aux spécifications techniques */
+    .conteneur {
+       margin-left: 0px;
+       margin-right: 0px;
+       /*max-width: 1400px;*/
+     }
+    body {
+        font-family: 'raleway', serif;
+        margin-left: 40px;
+        margin-right: 40px;
+        max-width: 1400px;
+    }
+    
+    /* Utilisation de la police qu'on vient de définir sur les titres et la phrase d'après */
+    h1 {
+        font-family: 'raleway', Arial;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    h2 {
+        font-family: 'raleway', Arial;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-family: 'raleway', Arial;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 16px;
+        margin : 0;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    
+    figure, ul{
+        margin: 0;
+        padding: 0;
+    } 
+    
+    /* Réduire la taille du logo. */
+    header img {
+        width: 61.09px;
+        height: 19px;
+    }
+    /* Application de flexbox au menu de navigation pour les mettre côte à côte, en bas. Supprimer les deux listes à puces */
+    header nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center; 
+        /*border-bottom: 2px solid #d9d9d9;*/  
+    }
+    /* Espacer les deux éléments du menu */
+    header nav li {
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        border-bottom: 2px solid #d9d9d9;
+        width: 50%;
+        text-align: center;
+        padding: 30px 0;
+        border-top: none;
+    }
+    /* Apparence par défaut des liens */
+    header a {
+        text-decoration: none;
+        color: black;
+     }
+    /* Apparence au survol des liens */
+    header nav li:hover {
+        border-bottom: 2px solid #0065FC; 
+        border-top: none;  
+    }
+    header nav li:hover a{
+        color: #0065FC; 
+    }
+
+    .bloc_recherche {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    form {
+        margin-top: 20px;
+    }
+    form figure {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 49px;   
+        background: #f2f2f2; 
+        border: 1px solid #f2f2f2;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    form .fa-solid, .fas {
+        height: fit-content;
+        color: black;
+    }
+
+    [type="search"] {
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    height: 51.2px;
+    position: relative;
+    right: 5px;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    }
+
+    form span {
+        display: none;
+    }
+
+    form span b, strong {
+    font-family: 'Raleway', serif, sans serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    }
+
+    #intitule_filtre {
+        border: none;
+        font-size: 14px;
+    }
+    #blocun_des_filtres, #blocdeux_des_filtres {
+        border: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+    }
+    .conteneur_filtres .fa-solid, .fas {
+        color: #0065FC;
+        padding-right: 7px;
+        width: 13px;
+    }
+    .conteneur_filtres {
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+    .conteneur_filtres div {
+        border-radius: 25px;
+        padding: 10px 10px;
+        border: 2px #d9d9d9 solid;
+        margin: 15px 15px 0px 0px;
+        font-size: 11px;
+    }
+
+    #blocun_des_filtres div:hover, #blocdeux_des_filtres div:hover {
+        background-color: #DEEBFF;    
+    }
+    #intitule_filtre:hover {
+    background: none;
+    }
+
+    .info_complementaire {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0px;
+    }
+    .info_complementaire b, strong {
+        color:#0065FC    
+    }
+    .info_complementaire div {
+        border-radius: 25px;
+        border: 1px #d9d9d9 solid;
+        padding: 1px 8px 8px 8px;
+        width: 4px;
+        height: 10px;
+        margin-right: 7px;
+    }
+
+    #loupe {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 45px;
+        background: #0065FC;
+        border: 1px solid #0065FC;
+        border-radius: 0px 15px 15px 0px;
+        position: relative;
+        right: 10px;
+        color: white;   
+    }
+    .conteneur_hebergements_populaires {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .hebergements {
+        background-color: white;
+        width: 93%;
+        border-radius: 20px;
+        padding: 0px;
+    }
+    .conteneur_carte_hebergement_marseille {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .carte_hebergement_marseille {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 20px; /* 5px rounded corners */
+        background-color: white;
+        padding: 3px;
+        width: 95%;
+        height: 199px;
+        margin: 10px 0px;
+      }
+      /*Pour appliquer une margin afin d'augmenter l'espace conformément à la maquette*/
+      .carte_hebergement_marseille:nth-child(4), .carte_hebergement_marseille:nth-child(5), .carte_hebergement_marseille:nth-child(6) {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 20px; /* 5px rounded corners */
+        background-color: white;
+        padding: 3px;
+        width: 95%;
+        height: 199px;
+        margin: 10px 0px;
+      }
+    .conteneur_carte_populaire_marseille {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .carte_populaire_marseille {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 20px; /* 5px rounded corners */
+        background-color: white;
+        padding: 4px;
+        width: 90%; 
+        height: 144px;
+        margin: 0 15px 33px 15px;
+        display: flex;
+    }
+    /*Supprimer le margin-right de la dernière card plus populaire*/
+    .carte_populaire_marseille:nth-child(3) {
+        margin: 0 0px 33px 15px;
+    }
+    .carte_populaire_marseille p {
+        font-size: 10px;
+    }
+    .fa-solid, .fas {
+        font-weight: 900;
+        width: 12px;
+        height: 12px;
+        padding: 2px;
+        color: #0065FC;
+      }
+      
+      /* Add rounded corners to the top left and the top right corner of the image */
+    .hebergements img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 124px;
+        object-fit: cover;
+      }
+    
+    .tarifs_marseille {
+        font-weight: 400;
+        font-size: 12px;
+        font-style: normal;
+        margin: 5px 5px 5px 10px;
+      }
+    .conteneur_icones_notations {
+        color: #0065FC;
+        font-size: 12px;
+        display: inline-flex;
+        margin-left: 6px;
+      }
+    
+    .afficher_plus {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0px 10px;
+        display: none;
+    }
+
+    .plus_populaire {
+        background-color: #f2f2f2;
+        width: 100%;
+        border-radius: 0;
+        padding: 0px;
+        margin-top: 20px;
+    }
+    .plus_populaire h2 {
+        margin-left: 15px;
+    }
+    .plus_populaire img {
+        border-radius: 20px 0 0 20px;
+        width: 40%;
+        height: 144px;
+        object-fit: cover;
+      }
+    
+    .carte_populaire_marseille div {
+        width: 60%;
+    }
+     
+    #graphique_tendance {
+    float: right;
+    margin-right: 30px;   
+    }
+    
+    .derniere_etoile {
+        font-weight: 900;
+        color: #d9d9d9;  
+    }
+    .h3_activites_marseille {
+        padding-top: 15px;
+        padding-left: 17px;
+    }
+    .h3_activites_marseille_notre_dame {
+        padding-top: 15px;
+        padding-left: 17px;
+        padding-right: 42px;
+    }
+    .activites {
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .activites h2 {
+        font-family: 'raleway', Arial;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0 0 0 15px;
+        padding: 30px 0 0 0;   
+    }
+    
+    .conteneur_carte_activites_marseille {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .carte_activites_marseille {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 20px; /* 5px rounded corners */
+        background-color: white;
+        width: 95%; 
+        height: 190px;
+        margin: 10px;
+    }
+    
+    .activites img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 134px;
+        object-fit: cover;
+    }
+    
+    footer {
+        background-color: #f2f2f2;
+        width: 100%;  
+        display: flex;
+        line-height: 30px;
+        padding: 30px 0px 30px 0px;
+        flex-direction: column;
+    }
+    footer div {
+        margin-left: 20px;
+    }
+    footer h3 {
+        padding-left: 0px;
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+    figure, ul {
+        list-style: none;
+    }
+    footer figure, li {
+        font-size: 12px;  
+    }        
+}  
